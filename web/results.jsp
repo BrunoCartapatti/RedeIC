@@ -16,14 +16,17 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Insert Result</title>
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+        <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
     </head>
     <body>
         <h3>Insert Result</h3>
         <%
             // Setando parámetros para conectar com o servidor de banco de dados
             String url = "jdbc:mysql://localhost:3306/si?";
-            String uid = "root";
-            String pwd = "barretto";
+            String uid = "aluno";
+            String pwd = "epusp";
             //String url = "jdbc:mysql://testdbinstance.ch8wnywicnyt.sa-east-1.rds.amazonaws.com/email_contacts";
             //String uid = "testuser";
             //String pwd = "testuser1";
@@ -42,13 +45,9 @@
 
                 // lendo parámetros obtido do formulário na página index.jsp
                 String nusp = user.getNusp();                
-                System.out.println(nusp);
                 String email = user.getEmail();
-                System.out.println(email);
                 String nome = user.getNome();
-                System.out.println(nome);
                 String sobrenome = user.getSobrenome();
-                System.out.println(sobrenome);
                 String vinculo;
 
                 if (user.getVinculo().equals("aluno"))
@@ -59,7 +58,6 @@
                     vinculo = "Assistente";
                 else
                     vinculo = "N/D";
-                System.out.println(vinculo);
                 
                 boolean proceed = false;
 

@@ -13,6 +13,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Visualização</title>
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+        <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
     </head>
     <body>
         <h3>Banco de dados</h3>
@@ -22,8 +25,8 @@
             //String uid = "testuser";
             //String pwd = "testuser1";
             String url = "jdbc:mysql://localhost:3306/si?";           
-            String uid = "root";
-            String pwd = "barretto";
+            String uid = "aluno";
+            String pwd = "epusp";
 
             Connection conn = null;
             ResultSet results = null;
