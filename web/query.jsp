@@ -13,17 +13,35 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Visualização</title>
+        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+        <link href="default.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
     </head>
     <body>
-        <h3>Banco de dados</h3>
+    <div id="header-wrapper">
+	<div id="header" class="container">
+            <div id="logo">
+                <h1><a href="#">PoliNet</a></h1>
+                <div id="menu">
+                    <ul>
+                        <li><a href="index.jsp" accesskey="1" title="">Home</a></li>
+                        <li><a href="login.html" accesskey="2" title="">Login</a></li>
+                        <li><a href="info.html" accesskey="3" title="">Sobre nós</a></li>
+                        <li><a href="cadastro.jsp" accesskey="4" title="">Cadastre-se</a></li>
+                    </ul>
+                </div>
+            </div>
+	</div>
+    </div>
+    <h3>Banco de dados</h3>
         <%
             // Setando parámetros para conectar com o servidor de banco de dados
             //String url = "jdbc:mysql://testdbinstance.ch8wnywicnyt.sa-east-1.rds.amazonaws.com/email_contacts";
             //String uid = "testuser";
             //String pwd = "testuser1";
             String url = "jdbc:mysql://localhost:3306/si?";           
-            String uid = "root";
-            String pwd = "barretto";
+            String uid = "aluno";
+            String pwd = "epusp";
 
             Connection conn = null;
             ResultSet results = null;
